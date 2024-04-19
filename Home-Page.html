@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> NEUST Website</title>
+    <link rel="stylesheet" href="Neust_DES.css">
+</head>
+<body >
+  <div class="DivStyle1">
+    <a href="Home-Page.html"> <img src="Images/NEUST-Logo.png" class="logo"  alt="logo"> </a>
+    <h2>NUEVA ECIJA UNIVERSITY OF SCIENCE AND TECHNOLOGY</h2>
+    <p><b>Republic of the Philippines</b></p>
+    <h5><b>ISO 9001:2015 CERTIFIED</b></h5>
+  </div>
+  <div id="photo">
+      <div class="vertical-menu"> 
+        <a href=""> <b>HISTORY</b> </a>
+        <a href=""> <b>COURSES</b> </a> 
+        <a href=""> <b>EVENTS</b> </a>
+        <a href=""> <b>CONTACTS</b> </a>
+      </div>
+    </div>
+  <div class="DivStyle2">
+    <video controls autoplay>
+      <source src="Videos/NEUST HYMN Lyrics - NEUST Chorale.mp4" type="video/mp4">
+      <source src="Videos/NEUST HYMN Lyrics - NEUST Chorale.ogg" type="Video/ogg">
+       Words of encouragement
+    </video>
+    <img src="Images/MISSION.webp" alt="Mission" >
+    <img src="Images/VISION.webp" alt="Vision" >
+    <img src="Images/TAGLINE-CORE.webp" alt="Tagline" >
+  </div>
+  <div class="DivStyle3">
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="Images/300176073_1423781014812132_6075915651655266224_n.webp">
+      </div>
+      <div class="mySlides fade">
+        <img src="Images/BEST-IN-THE-WORLD.webp">
+      </div>
+      <div class="mySlides fade">
+        <img src="Images/GAWAD-PARANGAL.webp">
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+      </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+    <div class="Statement">
+      <p>NEUST is a highly-regarded educational institution located in the province of Nueva Ecija in the Philippines. It was established in 1906 as the Gabaldon School, and since then, has grown into a university that offers a wide range of academic programs in the fields of science, technology, engineering, and mathematics (STEM), as well as in other disciplines such as business, education, and agriculture.</p>
+      <p>NEUST is known for its commitment to providing quality education to its students, as well as for its research initiatives and community outreach programs. The university has a strong faculty composed of experts in their respective fields, and it offers modern facilities and resources to support student learning.</p>
+    </div>
+  </div>
+  
+
+
+  <script>
+    const resultList = document.getElementById('results')
+    new URLSearchParams (window.location.search). forEach((value,
+    name) => {
+      resultList.append(value)
+      resultList.append(document.createElement('br'))
+    })
+  </script>
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>    
+</body>
+</html>

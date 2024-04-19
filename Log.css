@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background: url(Images/2023-02-25.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.DivStyle1 {
+    position: absolute;
+    top: 150px;
+    left: 500px;
+    padding: 30px;
+    width: 500px;
+    height: 390px;
+    border-radius:8px ;
+    background-color: rgba(0, 0, 200, 0.7);
+}
+
+.DivStyle1 h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: gold;
+}
+
+.DivStyle1 .LStyle {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.DivStyle1 .LStyle input { 
+    padding: 10px;
+    font-size: 20px;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.DivStyle1 button {
+    padding: 15px 30px;
+    width: 100%;
+    margin-top: 37px;
+    background-color: gold;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5;
+}
+
+.DivStyle1 button:hover {
+    background-color: goldenrod;
+}
+
+.DivStyle1 a {
+    text-decoration: none;
+    color: gold;
+    font-size: 20px;
+    position: relative;
+    left: 25px;
+}
+
+.DivStyle1 a:hover {
+    color: goldenrod;
+}

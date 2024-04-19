@@ -1,0 +1,346 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #0a0a0a;
+    background: darkblue;
+    -webkit-font-smoothing: antialiased; 
+    
+}
+
+.vertical-menu{
+    width: 150px;
+    height: 85%;
+    overflow-y: auto;
+    position: absolute;
+    background-color:darkblue;
+    scroll-behavior: auto;
+    padding: 10px;
+    border: #000000;
+}
+
+.vertical-menu a{
+    background-color: darkblue;
+    height: 15%; ;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    display: list-item;
+    border: #000000;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    position: static;
+}
+
+.vertical-menu b {
+    position: relative;
+    top: 35%;
+}
+
+.vertical-menu a:hover {
+    color: darkblue;
+    background-color: goldenrod;
+    border-radius: 15%;
+}
+
+.vertical-menu a:active {
+    background-color: goldenrod;
+}
+
+.logo{
+    margin: auto;
+    width: 100px;
+    height: 100%;
+    padding: 10px;
+    padding-bottom: 0px;
+    margin-bottom: 0%;
+    border-radius: 0%;
+    
+}
+
+nav{
+    background-color: rgb(8, 63, 212);
+    height: 10%;
+    width: auto;
+}
+
+h1{
+    text-align: center;
+    color: #858484;
+}
+
+.photos{
+    background-image: url(NEUST\ BACKGROUND.jpg);
+    width: 100%;
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.DivStyle1 {
+    background-color: darkblue;
+}
+
+.DivStyle1 h2 {
+    position: absolute;
+    left: 130px;
+    top: 20px;
+    color: goldenrod;
+}
+
+.DivStyle1 p {
+    position: absolute;
+    left: 130px;
+    top: 8px;
+    color: white;
+}
+
+.DivStyle1 h5 {
+    position: absolute;
+    left: 130px;
+    top: 50px;
+    color: white;
+}
+
+.DivStyle2 {
+    background-color: white;
+    border-radius: 5%;
+    height: 800px;
+    width: 400px;
+    position: absolute;
+    top: 150px;
+    right: 40px;
+}
+
+.DivStyle3 {
+    background-color: white;
+    border-radius: 5%;
+    height: 800px;
+    width: 850px;
+    position: absolute;
+    top: 150px;
+    right: 470px;
+}
+
+.DivStyle2 video {
+    height: 180px;
+    width: 320px;
+    position: relative;
+    top: 20px;
+    left: 40px;
+    border: solid goldenrod 3px;
+    border-radius: 10%;
+}
+
+.DivStyle2 img {
+    height: 180px;
+    width: 320px;
+    position: relative;
+    top: 30px;
+    left: 40px;
+}
+
+.Statement {
+   width: 90%;
+   position: relative;
+   top: 65px;
+   left: 30px;
+   border: solid goldenrod 3px;
+   padding: 10px;
+   font-size: 18px;
+}
+
+.mySlides {display: none}
+
+.mySlides img {
+    width: 90%;
+    position: relative;
+    top: 50px;
+    left: 40px;
+    vertical-align: middle;
+    border: solid goldenrod 3px;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  position: relative;
+  top: 50px;
+  left: 20px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+.tablestyle{
+    font-family: sans-serif;
+    table-layout: inherit;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+    background-position: right;
+    color: rgb(0, 0, 0);
+    border: solid goldenrod 3px;
+    border-radius: 12px;
+    scroll-behavior: auto;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+.tablestyle tr:hover {background-color: #ddd;}
+
+.stylish{
+    background-color: white;
+    border-radius: 5%;
+    height: 800px;
+    width: 400px;
+    position: absolute;
+    top: 150px;
+    right: 40px;
+}
+
+
+.sumacab{
+    border-radius: 5%;
+    border: solid goldenrod 3px;
+    height: 100%;
+    padding: 0%;
+}
+.sumacab img{
+    height: 180px;
+    width: 320px;
+    position: relative;
+    top: 20px;
+    left: 40px;
+    border: solid goldenrod 3px;
+    border-radius: 10%;
+}
+h1{
+ 
+    color: white;
+    text-align: center;
+    
+}
+.DivStyle2  p{
+    color: #000000;
+    text-align: center;
+    padding: auto;
+    font-size: 17px;
+}
+h2{
+ 
+    color: white;
+    text-align: center;
+}
+
+.contacts{
+    background-color: white;
+    border-radius: 5%;
+    height: 1200px;
+    width: 900px;
+    position: absolute;
+    top: 150px;
+    right: 470px;
+
+}
+.contacts h1{
+    color: goldenrod;
+
+
+}
+.contacts a img{
+    height: 180px;
+    width: 320px;
+    position: relative;
+    top: 30px;
+    left: 40px;
+
+}
+.contacts p {
+        position: relative;
+        left: 130px;
+        top: 8px;
+        color: darkblue'
+}
+.contacts h2{
+    color: goldenrod;
+    text-align: right;
+    width: 200px;
+    height: 200px;;
+
+}
+.map{
+    background-image: url(Images/Neust\ map.png);
+    height: 200px;
+    width: 200px;
+}
+.DivStyle2 p {
+    font-size: 25px;
+    font-family: sans-serif;
+    color: rgb(0, 0, 0);
+   
+
+}
+.DivStyle2 h3{
+    font-size: 25px;
+    font-family: sans-serif;
+    color: goldenrod;
+    text-align: center;
+}
+.contacts a img{
+    align-items: center;
+}
